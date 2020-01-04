@@ -1,0 +1,21 @@
+plugins
+{
+	id 'war'
+}
+
+repositories
+{
+	jcenter()
+}
+
+dependencies
+{
+	providedCompile 'javax.validation:validation-api:2.0.1.Final'
+	providedCompile 'javax.ws.rs:javax.ws.rs-api:2.1.1'
+	providedCompile 'javax.enterprise:cdi-api:2.0.SP1'
+
+	compile 'org.hibernate:hibernate-agroal:5.3.6.Final'
+
+	compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+	compile group: 'javax.ejb', name: 'javax.ejb-api', version: '3.2.2'
+}
